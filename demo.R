@@ -15,11 +15,11 @@ Options:
 library(docopt)
 
 # define main function
-main <- function(opt){
+main <- function(){
+  opt <- docopt(doc)
   print(opt)
   print(typeof(opt))
 }
 
-opt <- docopt(doc)
-main(opt)
+main()
 
