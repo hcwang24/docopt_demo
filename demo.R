@@ -13,6 +13,13 @@ Options:
 " -> doc
 
 library(docopt)
+
+# define main function
+main <- function(opt){
+  print(opt)
+  print(typeof(opt))
+}
+
 opt <- docopt(doc)
-print(opt)
-print(typeof(opt))
+main(opt)
+
