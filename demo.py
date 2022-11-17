@@ -14,12 +14,11 @@ Options:
 from docopt import docopt
 
 # define main function
-def main(opt):
+def main():
+    opt = docopt(__doc__)
     print(opt)
     print(type(opt))
 
-opt = docopt(__doc__)
-
 # call main function
 if __name__ == "__main__":
-    main(opt)
+    main()
